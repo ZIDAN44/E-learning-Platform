@@ -22,10 +22,10 @@ public class AdminLogin extends JFrame implements ActionListener {
         setSize(1100, 800);
         setLocationRelativeTo(null);
 
-        ImageIcon icon = new ImageIcon(getClass().getResource("../Pictures/Common/Icon.png"));
+        ImageIcon icon = new ImageIcon(getClass().getResource("/GUI/Pictures/Common/Icon.png"));
         setIconImage(icon.getImage());
 
-        ImageIcon backgroundIcon = new ImageIcon("GUI/Pictures/AdminLogin/background.png");
+        ImageIcon backgroundIcon = new ImageIcon(getClass().getResource("/GUI/Pictures/AdminLogin/background.png"));
         Image backgroundImage = backgroundIcon.getImage().getScaledInstance(getWidth(), getHeight(),
                 Image.SCALE_SMOOTH);
         backgroundIcon = new ImageIcon(backgroundImage);
@@ -54,13 +54,13 @@ public class AdminLogin extends JFrame implements ActionListener {
         passwordField.setPreferredSize(new Dimension(150, 30));
         passwordField.setBounds(470, 360, 170, 30);
 
-        ImageIcon loginIcon = new ImageIcon("GUI/Pictures/Common/login.png");
+        ImageIcon loginIcon = new ImageIcon(getClass().getResource("/GUI/Pictures/Common/login.png"));
         loginButton = new JButton(loginIcon);
         loginButton.addActionListener(this);
         loginButton.setPreferredSize(new Dimension(50, 30));
         loginButton.setBounds(515, 407, 70, 30);
 
-        ImageIcon exitIcon = new ImageIcon("GUI/Pictures/Common/Exit.png");
+        ImageIcon exitIcon = new ImageIcon(getClass().getResource("/GUI/Pictures/Common/Exit.png"));
         exitButton = new JButton(exitIcon);
         exitButton.addActionListener(this);
         exitButton.setPreferredSize(new Dimension(25, 25));
@@ -68,7 +68,7 @@ public class AdminLogin extends JFrame implements ActionListener {
         exitButton.setBackground(Color.decode("#A8251A"));
         backgroundLabel.add(exitButton);
 
-        ImageIcon eyeIcon = new ImageIcon("GUI/Pictures/Common/eye.png");
+        ImageIcon eyeIcon = new ImageIcon(getClass().getResource("/GUI/Pictures/Common/eye.png"));
         showPasswordButton = new JButton(eyeIcon);
         showPasswordButton.addActionListener(this);
         showPasswordButton.setBounds(650, 362, 25, 25);

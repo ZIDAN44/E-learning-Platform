@@ -20,7 +20,7 @@ public class HomePage extends JFrame implements ActionListener {
         setLayout(null);
 		setResizable(false);
 
-        ImageIcon icon = new ImageIcon(getClass().getResource("Pictures/Common/Icon.png"));
+        ImageIcon icon = new ImageIcon(getClass().getResource("/GUI/Pictures/Common/Icon.png"));
         setIconImage(icon.getImage());
 
         JLabel titleLabel = new JLabel("Welcome to E-Learning Platform!");
@@ -56,7 +56,7 @@ public class HomePage extends JFrame implements ActionListener {
         add(teacherButton);
         add(studentButton);
 
-        ImageIcon bgImage = new ImageIcon(getClass().getResource("Pictures/Home/BG.png"));
+        ImageIcon bgImage = new ImageIcon(getClass().getResource("/GUI/Pictures/Home/BG.png"));
         JLabel bgLabel = new JLabel(bgImage);
         bgLabel.setBounds(0, 0, getWidth(), getHeight());
         add(bgLabel);

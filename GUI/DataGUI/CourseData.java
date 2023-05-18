@@ -26,7 +26,7 @@ public class CourseData extends JFrame implements ActionListener {
         CourseList.loadCourseListFromFile();
 
         // Load the image for the icon
-        ImageIcon icon = new ImageIcon(getClass().getResource("../Pictures/Common/Icon.png"));
+        ImageIcon icon = new ImageIcon(getClass().getResource("/GUI/Pictures/Common/Icon.png"));
         setIconImage(icon.getImage());
 
         initButtons();
@@ -34,7 +34,7 @@ public class CourseData extends JFrame implements ActionListener {
         setCursorIcon();
 
         // Add background image
-        ImageIcon bgImage = new ImageIcon(getClass().getResource("../Pictures/AdminGUI/Data_Background.png"));
+        ImageIcon bgImage = new ImageIcon(getClass().getResource("/GUI/Pictures/AdminGUI/Data_Background.png"));
         JLabel bgLabel = new JLabel(bgImage);
         bgLabel.setBounds(0, 0, getWidth(), getHeight());
         add(bgLabel);

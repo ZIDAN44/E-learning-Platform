@@ -24,10 +24,10 @@ public class PaymentGUI extends JDialog implements ActionListener {
         setLocationRelativeTo(null);
         setLayout(null);
 
-        ImageIcon icon = new ImageIcon(getClass().getResource("../Pictures/Common/PaymentIcon.png"));
+        ImageIcon icon = new ImageIcon(getClass().getResource("/GUI/Pictures/Common/PaymentIcon.png"));
         setIconImage(icon.getImage());
 
-        ImageIcon backgroundIcon = new ImageIcon("GUI/Pictures/Common/PaymentBG.png");
+        ImageIcon backgroundIcon = new ImageIcon(getClass().getResource("/GUI/Pictures/Common/PaymentBG.png"));
         Image backgroundImage = backgroundIcon.getImage().getScaledInstance(getWidth(), getHeight(),
                 Image.SCALE_SMOOTH);
         backgroundIcon = new ImageIcon(backgroundImage);

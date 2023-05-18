@@ -87,7 +87,7 @@ public class EditProfileDialog extends JDialog implements ActionListener {
         passwordField.setFont(fieldFont);
         add(passwordField);
 
-        ImageIcon eyeIcon = new ImageIcon("GUI/Pictures/Common/eye.png");
+        ImageIcon eyeIcon = new ImageIcon(getClass().getResource("/GUI/Pictures/Common/eye.png"));
         showPasswordButton = new JButton(eyeIcon);
         showPasswordButton.addActionListener(this);
         showPasswordButton.setBounds(355, 172, 25, 25);

@@ -25,10 +25,10 @@ public class StudentLogin extends JFrame implements ActionListener {
         setSize(1100, 800);
         setLocationRelativeTo(null);
 
-        ImageIcon icon = new ImageIcon(getClass().getResource("../Pictures/Common/Icon.png"));
+        ImageIcon icon = new ImageIcon(getClass().getResource("/GUI/Pictures/Common/Icon.png"));
         setIconImage(icon.getImage());
 
-        ImageIcon backgroundIcon = new ImageIcon("GUI/Pictures/StudentLogin/background.png");
+        ImageIcon backgroundIcon = new ImageIcon(getClass().getResource("/GUI/Pictures/StudentLogin/Background.png"));
         Image backgroundImage = backgroundIcon.getImage().getScaledInstance(getWidth(), getHeight(),
                 Image.SCALE_SMOOTH);
         backgroundIcon = new ImageIcon(backgroundImage);
@@ -57,7 +57,7 @@ public class StudentLogin extends JFrame implements ActionListener {
         passwordField.setPreferredSize(new Dimension(150, 30));
         passwordField.setBounds(470, 360, 170, 30);
 
-        ImageIcon signUpIcon = new ImageIcon("GUI/Pictures/StudentLogin/Signup.png");
+        ImageIcon signUpIcon = new ImageIcon(getClass().getResource("/GUI/Pictures/StudentLogin/Signup.png"));
         Image scaledImage = signUpIcon.getImage().getScaledInstance(235, 200, Image.SCALE_SMOOTH);
         ImageIcon scaledIcon = new ImageIcon(scaledImage);
         signUpButton = new RoundedCornerButton("", 45);
@@ -65,13 +65,13 @@ public class StudentLogin extends JFrame implements ActionListener {
         signUpButton.addActionListener(this);
         signUpButton.setBounds(435, 450, 230, 35);
 
-        ImageIcon loginIcon = new ImageIcon("GUI/Pictures/Common/login.png");
+        ImageIcon loginIcon = new ImageIcon(getClass().getResource("/GUI/Pictures/Common/login.png"));
         loginButton = new JButton(loginIcon);
         loginButton.addActionListener(this);
         loginButton.setPreferredSize(new Dimension(50, 30));
         loginButton.setBounds(515, 407, 70, 30);
 
-        ImageIcon exitIcon = new ImageIcon("GUI/Pictures/Common/Exit.png");
+        ImageIcon exitIcon = new ImageIcon(getClass().getResource("/GUI/Pictures/Common/Exit.png"));
         exitButton = new JButton(exitIcon);
         exitButton.addActionListener(this);
         exitButton.setPreferredSize(new Dimension(25, 25));
@@ -79,7 +79,7 @@ public class StudentLogin extends JFrame implements ActionListener {
         exitButton.setBackground(Color.decode("#A8251A"));
         backgroundLabel.add(exitButton);
 
-        ImageIcon eyeIcon = new ImageIcon("GUI/Pictures/Common/eye.png");
+        ImageIcon eyeIcon = new ImageIcon(getClass().getResource("/GUI/Pictures/Common/eye.png"));
         showPasswordButton = new JButton(eyeIcon);
         showPasswordButton.addActionListener(this);
         showPasswordButton.setBounds(650, 362, 25, 25);

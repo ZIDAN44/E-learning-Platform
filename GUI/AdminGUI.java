@@ -24,14 +24,14 @@ public class AdminGUI extends JFrame implements ActionListener {
 
         this.currentAdmin = admin;
 
-        ImageIcon icon = new ImageIcon(getClass().getResource("Pictures/Common/Icon.png"));
+        ImageIcon icon = new ImageIcon(getClass().getResource("/GUI/Pictures/Common/Icon.png"));
         setIconImage(icon.getImage());
 
         initButtons();
         initButtonColors();
         setCursorIcon();
 
-        ImageIcon bgImage = new ImageIcon(getClass().getResource("Pictures/AdminGUI/A_Background.png"));
+        ImageIcon bgImage = new ImageIcon(getClass().getResource("/GUI/Pictures/AdminGUI/A_Background.png"));
         JLabel bgLabel = new JLabel(bgImage);
         bgLabel.setBounds(0, 0, getWidth(), getHeight());
         add(bgLabel);
@@ -44,7 +44,7 @@ public class AdminGUI extends JFrame implements ActionListener {
         int buttonHeight = 50;
 
         myProfileButton = createButton("");
-        ImageIcon myProfileIcon = new ImageIcon("GUI/Pictures/Common/My_Profile.png");
+        ImageIcon myProfileIcon = new ImageIcon(getClass().getResource("/GUI/Pictures/Common/My_Profile.png"));
         myProfileButton.setIcon(myProfileIcon);
         myProfileButton.setBounds(90, 70, 150, 150);
 
@@ -58,7 +58,7 @@ public class AdminGUI extends JFrame implements ActionListener {
         courseDataButton.setBounds(420, 410, buttonWidth, buttonHeight);
 
         logoutButton = createButton("");
-        ImageIcon logoutIcon = new ImageIcon("GUI/Pictures/Common/exit.png");
+        ImageIcon logoutIcon = new ImageIcon(getClass().getResource("/GUI/Pictures/Common/Exit.png"));
         logoutButton.setIcon(logoutIcon);
         logoutButton.setBounds(1010, 15, 50, 50);
     }

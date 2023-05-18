@@ -31,10 +31,10 @@ public class StudentSignUp extends JFrame implements ActionListener {
         // Load data
         StudentList.loadStudentListFromFile();
 
-        ImageIcon icon = new ImageIcon(getClass().getResource("../Pictures/Common/Icon.png"));
+        ImageIcon icon = new ImageIcon(getClass().getResource("/GUI/Pictures/Common/Icon.png"));
         setIconImage(icon.getImage());
 
-        ImageIcon backgroundIcon = new ImageIcon("GUI/Pictures/StudentSingUP/background.png");
+        ImageIcon backgroundIcon = new ImageIcon(getClass().getResource("/GUI/Pictures/StudentSingUP/Background.png"));
         Image backgroundImage = backgroundIcon.getImage().getScaledInstance(getWidth(), getHeight(),
                 Image.SCALE_SMOOTH);
         backgroundIcon = new ImageIcon(backgroundImage);
