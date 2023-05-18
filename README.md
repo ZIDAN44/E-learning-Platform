@@ -18,6 +18,10 @@ The E-Learning Platform is a comprehensive online education platform that facili
 2. Import the project into your preferred Java IDE.
 3. Build and run the project.
 
+# Releases
+
+[Package Release](https://github.com/ZIDAN44/E-learning-Platform/releases)
+
 # License
 
 [Apache License 2.0](https://www.apache.org/licenses/LICENSE-2.0)
